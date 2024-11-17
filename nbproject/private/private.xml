@@ -3,17 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="primer algoritmo">
-            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/web/web/usuario/buscar.jsp</file>
-            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/web/web/usuario/listar.jsp</file>
-            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/web/web/usuario/modificar.jsp</file>
-            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/web/web/usuario/agregar.jsp</file>
+            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/src/java/modelo/Producto.java</file>
             <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/src/java/controladores/ServletUsuario.java</file>
-            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/src/java/modelo/CRUDusuario.java</file>
-            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/web/web/index.jsp</file>
             <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/src/java/modelo/ConexionBaseDatos.java</file>
             <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/src/java/modelo/Usuario.java</file>
-            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/web/web/usuario/eliminar.jsp</file>
-            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/web/web/usuario/login.jsp</file>
         </group>
     </open-files>
 </project-private>
