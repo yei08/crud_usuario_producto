@@ -20,16 +20,22 @@ import java.sql.Date;
     private String telefono;
     private String estado;
     private Date fechaRegistro;  // Para almacenar la fecha de registro
-
+       
+    
     // Constructor
-    public Usuario(String password, String nombre, String apellidos, String rol, String email) {
+    public Usuario(String password, String nombre, String apellidos, String rol, String email,String estado) {
         this.password = password;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.rol = rol;
         this.email = email;
+        this.estado = estado;
     }
 
+    public Usuario() {
+    }
+
+    
     // Métodos getters y setters
     public int getId() {
         return id;
