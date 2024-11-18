@@ -3,8 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="primer algoritmo">
-            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/src/java/modelo/Producto.java</file>
             <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/src/java/controladores/ServletUsuario.java</file>
+            <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/src/java/modelo/CRUDusuario.java</file>
             <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/src/java/modelo/ConexionBaseDatos.java</file>
             <file>file:/C:/Users/JEIFER%20ALCALA/Desktop/CrudUsuarioProducto/src/java/modelo/Usuario.java</file>
         </group>

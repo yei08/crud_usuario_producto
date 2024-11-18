@@ -188,4 +188,45 @@ public class CRUDusuario {
             }
         }
     }
+    
+    public static Usuario[] listarTodosLosUsuarios()throws Exception{
+        Usuario alguien; 
+        ConexionBaseDatos baseDatos = null;
+        //armar el sql select de forma dinamica
+        String sqlSelect = "SELECT * FROM usuarios";
+        try {
+            // crear una sentencia jdbc mediante la sentencia sql anterior
+            baseDatos = new ConexionBaseDatos();
+            PreparedStatement sentenciaSQL = baseDatos.crearSentencia(sqlSelect);
+            //verificar el estado de la consulta
+            ResultSet resultado = baseDatos.consultar(sentenciaSQL);
+            resultado.last();//colocamos el ultimo registro del resultado
+            Usuario[] listado = new Usuario[resultado.getRow()];//la posicion del ultimo
+            resultado.beforeFirst();//nos colocamos antes del primer registro
+            while(resultado.next() == true) {
+                alguien = new Usuario();
+                alguien.setId(resultado.getInt("id"));
+                alguien.setPassword(resultado.getString("password"));
+                alguien.setNombre(resultado.getString("nombre"));
+                alguien.setApellidos(resultado.getString("apellidos"));
+                alguien.setRol(resultado.getString("rol"));
+                alguien.setEmail(resultado.getString("email"));
+                alguien.setTelefono(resultado.getString("telefono"));
+                alguien.setEstado(resultado.getString("estado"));
+                alguien.setFechaRegistro(resultado.getDate("fecha_registro"));
+                listado[resultado.getRow()] = alguien;
+            }if(listado.length <= 0){
+              throw new Exception("error al listar los usuarios"
+                      +"<br/>Explicacion:");
+            }
+            return listado;
+        }catch (Exception error){
+            throw new Exception(error.getMessage()+"la base de datos esta vacia");
+        }finally{
+            if (baseDatos != null){
+                baseDatos.desconectar();
+            }
+        }      
+        
+    }
 }
