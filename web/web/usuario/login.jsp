@@ -7,8 +7,8 @@
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="tuPaquete.CRUDusuario" %> <%-- Importa la clase CRUDusuario --%>
-<%@ page import="tuPaquete.Usuario" %> <%-- Importa la clase Usuario --%>
+<%@ page import="modelo.CRUDusuario" %> <%-- Importa la clase CRUDusuario --%>
+<%@ page import="modelo.Usuario" %> <%-- Importa la clase Usuario --%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,7 +24,7 @@
         <% } %>
 
         <%-- Formulario de inicio de sesión --%>
-        <form action="<%= request.getContextPath() %>/Controllers/ServletUsuario.jsp?action=authenticate" method="post">
+        <<form action="<%= request.getContextPath() %>/ServletUsuario" method="post">
             <label for="id">ID de Usuario:</label> 
             <input type="text" name="id" id="id" required> 
             <br>

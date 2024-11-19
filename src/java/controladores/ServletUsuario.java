@@ -37,7 +37,7 @@ public class ServletUsuario extends HttpServlet {
        try {
     String accion = request.getParameter("accion"); // Capturar la acción
     String redireccion = null;
-
+   if (accion != null ){
     if (accion.equals("agregar")) {
         CRUDusuario crudAlguien = new CRUDusuario();
         crudAlguien.getAlguien().setPassword(request.getParameter("password"));
@@ -48,7 +48,7 @@ public class ServletUsuario extends HttpServlet {
         crudAlguien.getAlguien().setTelefono(request.getParameter("telefono"));
         crudAlguien.getAlguien().setEstado(request.getParameter("estado"));
         crudAlguien.agregarUsuario();
-        response.sendRedirect("web/usuario/agregar.jsp?mensaje=Usuario agregado al sistema");
+       response.sendRedirect("web/usuario/agregar.jsp?mensaje=Usuario agregado al sistema");
 
     } else if (accion.equals("buscar")) {
         Usuario alguien = CRUDusuario.consultarUsuario(request.getParameter("id"));
@@ -134,7 +134,11 @@ public class ServletUsuario extends HttpServlet {
     } else {
         response.sendRedirect("web/mensaje.jsp?mensaje=La acción solicitada no es válida");
     }
-
+   } else {
+    // Manejar el caso en que "accion" es null
+    response.sendRedirect("web/mensaje.jsp?mensaje=No se especificó ninguna acción"); 
+}
+   
 } catch (Exception error) {
     response.sendRedirect("web/mensaje.jsp?mensaje=" + error.getMessage());
 } finally {
