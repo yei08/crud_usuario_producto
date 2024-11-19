@@ -24,8 +24,8 @@
         <% } %>
 
         <%-- Formulario de inicio de sesión --%>
-        <form action="<%= request.getContextPath() %>/Controllers/UserController.jsp?action=authenticate" method="post">
-            <label for="id">ID de Usuario:</label> <%-- Cambia "email" a "id" --%>
+        <form action="<%= request.getContextPath() %>/Controllers/ServletUsuario.jsp?action=authenticate" method="post">
+            <label for="id">ID de Usuario:</label> 
             <input type="text" name="id" id="id" required> 
             <br>
             <label for="password">Contraseña:</label>

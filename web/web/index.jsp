@@ -3,6 +3,8 @@
     Created on : 17 nov 2024, 2:47:58 a.m.
     Author     : JEIFER ALCALA
 --%>
+<%@ page import="modelo.CRUDusuario" %>
+<%@ page import="modelo.Usuario" %>
 <%
     if (request.getSession().getAttribute("usuario.login") == null){
         getServletContext().getRequestDispatcher("/web/usuario/login.jsp").forward(request, response);
