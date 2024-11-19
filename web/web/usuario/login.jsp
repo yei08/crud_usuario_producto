@@ -25,13 +25,15 @@
 
         <%-- Formulario de inicio de sesión --%>
         <<form action="<%= request.getContextPath() %>/ServletUsuario" method="post">
-            <label for="id">ID de Usuario:</label> 
-            <input type="text" name="id" id="id" required> 
-            <br>
-            <label for="password">Contraseña:</label>
-            <input type="password" name="password" id="password" required>
-            <br>
-            <input type="submit" value="Iniciar Sesión">
+            <input type="hidden" name="accion" value="login"> 
+        <label for="id">ID de Usuario:</label> 
+        <input type="text" name="id" id="id" required> 
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <input type="submit" value="Iniciar Sesión">   
+
         </form>
 
         <br>

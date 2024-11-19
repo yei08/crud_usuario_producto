@@ -34,10 +34,10 @@ public class ServletUsuario extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        String accion = request.getParameter("accion"); // Capturar la acción
-    String redireccion = null;
+       
         try {
-   
+    String accion = request.getParameter("accion"); // Capturar la acción
+    String redireccion = null;
    if (accion != null ){
     if (accion.equals("agregar")) {
         CRUDusuario crudAlguien = new CRUDusuario();
