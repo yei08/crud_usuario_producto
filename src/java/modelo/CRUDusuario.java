@@ -10,6 +10,24 @@ import java.sql.ResultSet;
  */
 public class CRUDusuario {
 
+    public CRUDusuario() {
+    }
+
+    public ConexionBaseDatos getBaseDatos() {
+        return baseDatos;
+    }
+    public void setBaseDatos(ConexionBaseDatos baseDatos) {
+        this.baseDatos = baseDatos;
+    }
+
+    public Usuario getAlguien() {
+        return alguien;
+    }
+    public void setAlguien(Usuario alguien) {
+        this.alguien = alguien;
+    }
+    
+    
     private ConexionBaseDatos baseDatos;
     private Usuario alguien;
 
@@ -229,4 +247,6 @@ public class CRUDusuario {
         }      
         
     }
+    
+    
 }
